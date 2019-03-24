@@ -1,0 +1,60 @@
+
+
+//Hello, in case you didn't read the title this is an unfinished program
+var fireMotionone = 200;
+var fireMotiontwo = 160;
+var fireMotionthree = 240;
+
+
+var draw= function() {
+    background(0, 0, 0);
+    //moon
+    fill(255, 255, 255);
+    ellipse(200,150,300,300);
+    //ground
+    fill(17, 94, 1);
+    rect(0,350,400,50);
+    //fire pit
+    stroke(168, 168, 168);
+    strokeWeight(10);
+    line(190,300,170,390);
+    line(210,300,230,390);
+    line(200,300,192,380);
+    //draws bowl of fire pit 
+    strokeWeight(1);
+    stroke(0, 0, 0);
+    fill(214, 0, 0);
+    arc(200,250,200,100,1,180);
+    ellipse(200,250,200,25);
+    //fire
+    noStroke();
+    fill(255, 242, 0);
+    ellipse(240,240,50,40);
+    ellipse(160,240,50,40);
+    fill(255, 183, 0);
+    ellipse(240,240,20,20);
+    ellipse(160,240,20,20);
+    fill(255, 242, 0);
+    triangle(fireMotionone,180,225,210,175,210);
+    triangle(145,225,170,225,fireMotiontwo,210);
+    triangle(255,225,225,225,fireMotionthree,210);
+    fill(255, 183, 0);
+    triangle(152,235,170,235,fireMotiontwo,220);
+    triangle(248,235,230,235,fireMotionthree,220);
+    fill(255, 242, 0);
+    ellipse(200,230,70,60);
+    fill(255, 183, 0);
+    triangle(fireMotionone,200,215,230,185,230);
+    fill(255, 183, 0);
+    ellipse(200,230,30,30);
+
+};
+
+
+
+
+
+
+
+
+
